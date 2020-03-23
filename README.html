@@ -16,6 +16,22 @@ INSTALL.rst file in this directory.
     (2013). Feedback inhibition enables theta-nested gamma oscillations and grid
     firing fields. Neuron, 77(1), 141–154. doi:10.1016/j.neuron.2012.11.032
 
+20200323 Note from the ModelDB Administrator: Simplified Ian Hawes
+update to incorporate a local copy of Dockerfile and also to include
+ubuntu 18.04 docker install notes file.  Please follow the install
+notes in ubuntu18.04_docker_install_notes.txt to install docker on an
+ubuntu 18.04 system.  You will also need to make sure this archives
+python files have excutable permission-execute the following in the
+GridCellModel folder:
+
+chmod -R 755 *
+# If the above command fails you may need to run it with an "sudo " in front
+# Also create an output folder
+mkdir grid_cell_model/output
+
+Then following Ian's below instructions below should work (except you
+no longer need to download the Dockerfile).
+
 20200306 Update from Ian Hawes:
 I have uploaded a Dockerfile here: <a href="https://gist.github.com/4iar/bd25c175614419e2a92c591d74a8dc29">https://gist.github.com/4iar/bd25c175614419e2a92c591d74a8dc29</a>
 
